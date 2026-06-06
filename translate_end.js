@@ -1,0 +1,73 @@
+const fs = require('fs');
+
+let team = fs.readFileSync('components/TeamCarousel.tsx', 'utf8');
+team = team.replace(/Meet Our Doctors/g, 'Echipa Noastra de Speciali?ti');
+fs.writeFileSync('components/TeamCarousel.tsx', team);
+
+let ba = fs.readFileSync('components/BeforeAfter.tsx', 'utf8');
+ba = ba.replace(/thousands of /g, 'cazuri clinice ');
+ba = ba.replace(/perfected smiles/g, 'rezolvate cu succes');
+ba = ba.replace(/Clinic Logo/g, 'Dr. Panfil');
+ba = ba.replace(/"Before"/g, '"Inainte"');
+ba = ba.replace(/"After"/g, '"Dupa"');
+ba = ba.replace(/\[Before Photo\]/g, '[Poza Inainte]');
+ba = ba.replace(/\[After Photo\]/g, '[Poza Dupa]');
+fs.writeFileSync('components/BeforeAfter.tsx', ba);
+
+let rev = fs.readFileSync('components/Reviews.tsx', 'utf8');
+rev = rev.replace(/what patients say /g, 'recenziile pacien?ilor ');
+rev = rev.replace(/about us/g, 'clinicii');
+rev = rev.replace(/Amazing clinic! The doctors are very professional and empathetic\./g, 'Experien?a extraordinara pentru copilul meu. Anestezia a decurs perfect, fara nicio frica!');
+rev = rev.replace(/Latest generation equipment\. I felt no pain during the procedure\./g, 'Singura clinica unde cel mic merge cu placere. Rabdarea medicilor este de nepre?uit.');
+rev = rev.replace(/Thank you for my transparent and dedicated treatment plan!/g, 'Excelen?a profesionala absoluta. Tratamente terapeutice explicate clar ?i fara stres.');
+rev = rev.replace(/Follow on Instagram/g, 'Afla mai multe pe Instagram');
+rev = rev.replace(/I Want a Treatment Plan/g, 'Cauta Ajutor Stomatologic');
+rev = rev.replace(/Google Rating:/g, 'Evaluarea pe Google:');
+fs.writeFileSync('components/Reviews.tsx', rev);
+
+let gal = fs.readFileSync('components/Gallery.tsx', 'utf8');
+gal = gal.replace(/from the office/g, 'pacien?i & talente');
+gal = gal.replace(/clinic atmosphere/g, 'din culisele clinicii');
+gal = gal.replace(/Modern equipment, friendly spaces, dedicated doctors\. We have created a relaxing environment for your visit\./g, 'Prioritizam conexiunea umana ?i emo?ia sincera. Tratamente prietenoase, dedicare completa.');
+gal = gal.replace(/Free Consultation/g, 'Urmare?te-ne online');
+fs.writeFileSync('components/Gallery.tsx', gal);
+
+let contact = fs.readFileSync('components/Contact.tsx', 'utf8');
+contact = contact.replace(/Quick Appointments\./g, 'Programeaza o Vizia.');
+contact = contact.replace(/No waiting\. Same-day scheduling\./g, 'Ai grija de zambetul familiei tale in siguran?a.');
+contact = contact.replace(/Address/g, 'Adresa');
+contact = contact.replace(/Phone/g, 'Telefon');
+contact = contact.replace(/Email/g, 'E-mail');
+contact = contact.replace(/Clinic Name/g, 'Dr. Panfil');
+contact = contact.replace(/Fill the form or call us directly\./g, 'Completeaza formularul ?i te contactam noi.');
+contact = contact.replace(/Full Name\*/g, 'Nume Complet*');
+contact = contact.replace(/"John Doe"/g, '"Ion Popescu"');
+contact = contact.replace(/Phone Number\*/g, 'Numar de Telefon*');
+contact = contact.replace(/Desired Service/g, 'Serviciu Dorit');
+contact = contact.replace(/Consultation/g, 'Consulta?ie');
+contact = contact.replace(/Implantology/g, 'Stomatologie Pediatrica');
+contact = contact.replace(/Dental Aesthetics/g, 'Anestezie Generala');
+contact = contact.replace(/Orthodontics/g, 'Tratamente Terapeutice');
+contact = contact.replace(/>Email</g, '>E-mail<');
+contact = contact.replace(/Message/g, 'Mesaj / Intrebare');
+contact = contact.replace(/How can we help you\?/g, 'Cum va putem ajuta?');
+contact = contact.replace(/Send Request/g, 'Trimite Cererea');
+fs.writeFileSync('components/Contact.tsx', contact);
+
+let footer = fs.readFileSync('components/Footer.tsx', 'utf8');
+footer = footer.replace(/"My Dental Clinic"/g, '"Familia Dr. Panfil"');
+footer = footer.replace(/Modern dental clinic offering comprehensive care, from prevention to complete rehabilitations\./g, 'Grija stomatologica prietenoasa, centrata pe siguran?a ?i confortul tau ?i al copiilor tai.');
+footer = footer.replace(/Quick Links/g, 'Legaturi Rapide');
+footer = footer.replace(/Home/g, 'Acasa');
+footer = footer.replace(/Services/g, 'Servicii');
+footer = footer.replace(/About Us/g, 'Despre Noi');
+footer = footer.replace(/Technology/g, 'Metode');
+footer = footer.replace(/Our Team/g, 'Echipa');
+footer = footer.replace(/Contact Info/g, 'Informa?ii de Contact');
+footer = footer.replace(/Working Hours/g, 'Program de Lucru');
+footer = footer.replace(/Mon - Fri:/g, 'Luni - Vineri:');
+footer = footer.replace(/Sat:/g, 'Sambata:');
+footer = footer.replace(/Sun:/g, 'Duminica:');
+footer = footer.replace(/Closed/g, 'Inchis');
+footer = footer.replace(/© 2026 My Dental Clinic \| All rights reserved/g, '&copy; 2026 Family Clinic Dr. Panfil | Toate drepturile rezervate');
+fs.writeFileSync('components/Footer.tsx', footer);
