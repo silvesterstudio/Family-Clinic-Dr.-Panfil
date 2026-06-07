@@ -14,11 +14,12 @@ export default function Servicii() {
 
           <div className="order-2 md:col-start-1 md:row-start-1 md:row-span-2 relative w-full aspect-[16/9] md:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="/under1-hero.png"
+              src="/under1-hero.webp"
               alt="Servicii Medicale"
               fill
               sizes="(max-width: 767px) 100vw, 50vw"
               className="object-cover"
+              loading="lazy"
             />
           </div>
 

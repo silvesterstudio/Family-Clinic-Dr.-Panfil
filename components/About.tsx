@@ -17,11 +17,12 @@ export default function About() {
 
           <div className="order-2 md:col-start-2 md:row-start-1 md:row-span-2 relative w-full aspect-[16/9] md:aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/under-hero.jpg"
+              src="/under-hero.webp"
               alt="Clinica Familiei Dr. Panfil"
               fill
               sizes="(max-width: 767px) 100vw, 50vw"
               className="object-cover"
+              loading="lazy"
             />
           </div>
 

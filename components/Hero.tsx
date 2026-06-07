@@ -1,33 +1,26 @@
-﻿"use client";
-import Image from "next/image";
-import { PLACEHOLDERS } from "@/lib/constants";
+﻿import { PLACEHOLDERS } from "@/lib/constants";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen w-full">
-      <Image
-        src={PLACEHOLDERS.heroImageMobile}
-        alt="Echipa Clinica Familiei Dr. Panfil"
-        fill
-        sizes="100vw"
-        className="object-cover object-center md:hidden"
-        priority
-      />
-      <Image
-        src={PLACEHOLDERS.heroImage}
-        alt="Dental Clinic Hero"
-        fill
-        sizes="100vw"
-        className="hidden object-cover md:block"
-        priority
-      />
+    <section className="relative h-screen w-full overflow-hidden">
+      {/* picture: browser loads only the matching hero — avoids double download on mobile */}
+      <picture className="absolute inset-0 block h-full w-full">
+        <source media="(min-width: 768px)" srcSet={PLACEHOLDERS.heroImage} type="image/webp" />
+        <img
+          src={PLACEHOLDERS.heroImageMobile}
+          alt="Echipa Clinica Familiei Dr. Panfil"
+          className="h-full w-full object-cover object-center"
+          fetchPriority="high"
+          decoding="async"
+        />
+      </picture>
 
       {/* Gradient behind hero text for readability */}
       <div
         className="absolute inset-x-0 bottom-0 pointer-events-none h-[55%] sm:h-[48%] md:h-[42%] bg-gradient-to-t from-black/90 via-black/55 to-transparent"
         aria-hidden="true"
       />
-      {/* Text positioned at bottom, more compact */}
+
       <div className="absolute bottom-0 left-0 right-0 z-10 pb-10 sm:pb-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">

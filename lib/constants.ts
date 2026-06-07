@@ -6,8 +6,8 @@ export const CONTACT_INFO = {
 };
 
 export const PLACEHOLDERS = {
-  heroImage: "/hero.png",
-  heroImageMobile: "/hero-mobile.png",
+  heroImage: "/hero.webp",
+  heroImageMobile: "/hero-mobile.webp",
   clinicBuilding: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
   serviceDentist: "https://images.unsplash.com/photo-1598256989800-fea5f12e84ce?w=800&q=80",
   doctors: [
