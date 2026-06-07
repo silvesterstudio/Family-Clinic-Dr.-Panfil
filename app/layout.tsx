@@ -28,24 +28,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ro" className={`${jakarta.variable} ${inter.variable} antialiased scroll-smooth`}>
-      <head>
-        <link
-          rel="preload"
-          as="image"
-          href="/hero-mobile.webp"
-          type="image/webp"
-          media="(max-width: 767px)"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="/hero.webp"
-          type="image/webp"
-          media="(min-width: 768px)"
-        />
-        <link rel="preconnect" href="https://www.instagram.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://static.cdninstagram.com" />
-      </head>
       <body>{children}</body>
     </html>
   );
