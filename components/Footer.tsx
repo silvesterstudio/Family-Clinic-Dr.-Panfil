@@ -1,22 +1,10 @@
-﻿import Image from "next/image";
-import { FacebookIcon, InstagramIcon } from "./Icons";
-import { CONTACT_INFO } from "@/lib/constants";
+﻿import { CONTACT_INFO } from "@/lib/constants";
 
 export default function Footer() {
   return (
     <footer className="bg-[#7a9a8a] text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-          
-          <div>
-            <div className="mb-6">
-              <Image src="/white.svg" alt="Dr. Panfil" width={200} height={48} className="object-contain h-12 w-auto brightness-0 invert" />
-            </div>
-            <div className="flex gap-3">
-              <a href="https://www.facebook.com/p/Family-Clinic-Dr-Panfil-61558394932274/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/40 transition-all"><FacebookIcon className="w-4 h-4"/></a>
-              <a href="https://www.instagram.com/familyclinic_dr.panfil" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/40 transition-all"><InstagramIcon className="w-4 h-4"/></a>
-            </div>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
 
           <div>
             <h4 className="font-bold uppercase tracking-wider text-sm mb-6 text-white/90">Legături Rapide</h4>
