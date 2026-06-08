@@ -3,14 +3,14 @@ import { Stethoscope, Smile, Ear, ScanFace } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-[var(--color-brand-grey)]">
+    <section id="about" className="py-6 md:py-20 bg-[var(--color-brand-grey)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-start">
           <div className="order-1 md:col-start-1 md:row-start-1">
-            <span className="uppercase text-sm font-semibold text-[var(--color-brand-teal)] tracking-wider">
+            <span className="hidden md:inline-block uppercase text-sm font-semibold text-[var(--color-brand-teal)] tracking-wider">
               Bine ați venit la
             </span>
-            <h2 className="font-primary text-4xl md:text-5xl font-bold text-[var(--color-brand-black)] mt-2 mb-0 md:mb-6">
+            <h2 className="font-primary text-[1.7rem] leading-snug sm:text-4xl md:text-5xl font-bold text-[var(--color-brand-black)] mt-0 md:mt-2 mb-0 md:mb-6">
               Clinica Familiei Dr. Panfil: ORL și Stomatologie sub același acoperiș
             </h2>
           </div>

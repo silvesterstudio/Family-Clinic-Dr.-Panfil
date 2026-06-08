@@ -10,10 +10,10 @@ const inputClass =
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-12 sm:py-16 md:py-20 bg-[var(--color-brand-grey)]">
+    <section id="contact" className="py-6 sm:py-16 md:py-20 bg-[var(--color-brand-grey)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12 md:mb-14">
+        <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-12 md:mb-14">
           <h2 className="font-primary text-3xl sm:text-4xl md:text-5xl font-bold text-[var(--color-brand-black)] mb-3 leading-tight">
             Programează o vizită
           </h2>

@@ -3,9 +3,9 @@ import { Ear, Smile } from "lucide-react";
 
 export default function Servicii() {
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-6 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-start">
           <div className="order-1 md:col-start-2 md:row-start-1">
             <h2 className="font-primary text-4xl md:text-5xl font-bold text-[var(--color-brand-black)] mb-0 md:mb-8 leading-tight">
               Servicii Medicale Integrate pentru <span className="text-[var(--color-brand-teal)]">Toate Vârstele</span>
