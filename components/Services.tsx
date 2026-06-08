@@ -53,10 +53,10 @@ export default function Servicii() {
               </p>
             </div>
 
-            <div className="mt-8">
+            <div className="mt-6 md:mt-8">
               <a
                 href="#beforeafter"
-                className="border-2 border-[var(--color-brand-teal)] text-[var(--color-brand-teal)] px-8 py-3 rounded-full uppercase font-semibold text-center inline-block hover:bg-[var(--color-brand-teal)] hover:text-white transition-all"
+                className="block w-full sm:inline-block sm:w-auto border-2 border-[var(--color-brand-teal)] text-[var(--color-brand-teal)] px-6 py-3 rounded-full uppercase font-semibold text-center hover:bg-[var(--color-brand-teal)] hover:text-white transition-all"
               >
                 Citește mai mult
               </a>
