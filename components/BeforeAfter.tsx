@@ -31,7 +31,7 @@ export default function BeforeAfter() {
   return (
     <section id="beforeafter" className="py-6 md:py-20 bg-[var(--color-brand-grey)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="font-primary text-4xl md:text-5xl font-bold text-center text-[var(--color-brand-black)] mb-6 md:mb-16">
+        <h2 className="font-primary text-[1.65rem] leading-snug sm:text-4xl sm:leading-tight lg:text-4xl font-bold text-center text-[var(--color-brand-black)] mb-6 md:mb-8">
           Cazuri clinice rezolvate cu <span className="text-[var(--color-brand-teal)]">succes</span>
         </h2>
 

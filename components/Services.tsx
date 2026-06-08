@@ -1,13 +1,16 @@
 ﻿import Image from "next/image";
 import { Ear, Smile } from "lucide-react";
 
+const sectionHeadingClass =
+  "font-primary text-[1.65rem] leading-snug sm:text-4xl sm:leading-tight lg:text-4xl font-bold";
+
 export default function Servicii() {
   return (
     <section id="services" className="py-6 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-start">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-x-8 md:gap-y-4 items-start">
           <div className="order-1 md:col-start-2 md:row-start-1">
-            <h2 className="font-primary text-4xl md:text-5xl font-bold text-[var(--color-brand-black)] mb-0 md:mb-8 leading-tight">
+            <h2 className={`${sectionHeadingClass} text-[var(--color-brand-black)] mb-0 leading-tight`}>
               Servicii Medicale Integrate pentru <span className="text-[var(--color-brand-teal)]">Toate Vârstele</span>
             </h2>
           </div>

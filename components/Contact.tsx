@@ -13,8 +13,8 @@ export default function Contact() {
     <section id="contact" className="py-6 sm:py-16 md:py-20 bg-[var(--color-brand-grey)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-12 md:mb-14">
-          <h2 className="font-primary text-3xl sm:text-4xl md:text-5xl font-bold text-[var(--color-brand-black)] mb-3 leading-tight">
+        <div className="text-center max-w-2xl mx-auto mb-6 md:mb-8">
+          <h2 className="font-primary text-[1.65rem] leading-snug sm:text-4xl sm:leading-tight lg:text-4xl font-bold text-[var(--color-brand-black)] mb-2 leading-tight">
             Programează o vizită
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-[var(--color-brand-black)]/70 leading-relaxed">
