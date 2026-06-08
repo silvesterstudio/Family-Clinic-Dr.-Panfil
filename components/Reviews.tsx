@@ -21,7 +21,7 @@ function InstagramEmbed({ url }: { url: string }) {
         allowFullScreen
         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
         loading="lazy"
-        style={{ border: 0, overflow: "hidden", pointerEvents: "none" }}
+        style={{ border: 0, overflow: "hidden" }}
         title="Recenzie Instagram"
       />
     </div>
