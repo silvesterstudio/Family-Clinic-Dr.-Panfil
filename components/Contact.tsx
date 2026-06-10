@@ -150,9 +150,10 @@ export default function Contact() {
             <div className="rounded-2xl overflow-hidden border border-[var(--color-brand-muted)] shadow-sm bg-white p-1">
               <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] min-h-[200px] sm:min-h-[240px]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10861!2d28.8598!3d47.0303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97df6e11c7e1d%3A0xb8d6f7e2c5b9a3f!2sStrada%20Andrei%20Doga%2026%2FA%2C%20Chi%C8%99in%C4%83u!5e0!3m2!1sen!2smd!4v1717000000000!5m2!1sen!2smd"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5438.770977469053!2d28.85383777569224!3d47.03266602743496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97d0d71fa9e47%3A0x3f9f0cc0584573bc!2sFamily%20Clinic%20Dr.%20Panfil!5e0!3m2!1sen!2s!4v1781102544158!5m2!1sen!2s"
                   className="absolute inset-0 w-full h-full border-0"
                   loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
                   title="Locația clinicii pe hartă"
                   allowFullScreen
                 />
